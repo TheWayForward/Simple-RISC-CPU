@@ -1,0 +1,88 @@
+// Instruction: bits 15-13 (opcode), bits 12-0 (address)
+
+// @00: Write bits below to ROM sequentially, from address 00
+
+@00
+111_00000   // JMP Test: first 3 bits 111 (JMP)
+0011_1111   // Jump to ROM address 111111 (3f)
+
+000_00000   // HLT (will process if JMP failed)
+0000_0000
+
+000_00000   // HLT (will process if JMP failed)
+0000_0000
+
+101_11000   // LDA Test: first 3 bits 101 (LDA)
+0000_0000   // Load data from RAM address 0 to accumulator (RAM address 0: 00000000)
+
+001_00000   // SKZ Test: first 3 bits 001 (SKZ)
+0000_0000   // Skip the next instruction if ALU's data is 0 (ALU output is now 00000000 because of LDA operation, will skip)
+
+000_00000   // HLT (will process if SKZ failed)
+0000_0000
+
+101_11000   // LDA Test: first 3 bits 101 (LDA)
+0000_0001   // Load data from RAM address 1 to accumulator (RAM address 1: 11111111)
+
+001_00000   // SKZ Test: first 3 bits 001 (SKZ)
+0000_0000   // Skip the next instruction if ALU's data is 0 (ALU output is now 11111111 because of LDA operation, won't skip)
+
+111_00000   // JMP Test: first 3 bits 111 (JMP)
+0001_0100   // Jump to ROM address 10100 (20)
+
+000_00000   // HLT (will process if JMP failed)
+0000_0000
+
+110_11000   // STO Test: first 3 bits 110 (STO)
+0000_0010   // Store data from accumulator to RAM address 2 (accumulator is now 11111111)
+
+101_11000   // LDA Test: first 3 bits 101 (LDA)
+0000_0000   // Load data from RAM address 0 to accumulator (RAM address 0: 00000000)
+
+110_11000   // STO Test: first 3 bits 110 (STO)
+0000_0010   // Store data from accumulator to RAM address 2 (accumulator is now 00000000)
+
+101_11000   // LDA Test: first 3 bits 101 (LDA)
+0000_0010   // Load data from RAM address 2 to accumulator (RAM address 2: 00000000)
+
+001_00000   // SKZ Test: first 3 bits 001 (SKZ)
+0000_0000   // Skip the next instruction if ALU's data is 0 (ALU output is now 00000000 because of LDA operation, will skip)
+
+000_00000   // HLT (will process if SKZ failed)
+0000_0000
+
+100_11000   // XOR Test: first 3 bits 100 (XOR)
+0000_0001   // XOR (accumulator: 00000000, RAM address 1: 11111111) result: 11111111
+
+001_00000   // SKZ Test: first 3 bits 001 (SKZ)
+0000_0000   // Skip the next instruction if ALU's data is 0 (ALU output is now 11111111 because of XOR operation, won't skip)
+
+111_00000   // JMP Test: first 3 bits 111 (JMP)
+0010_1000   // Jump to ROM address 101000 (40)
+
+000_00000   // HLT (will process if SKZ processed after XOR failed)
+0000_0000
+
+100_11000   // XOR Test: first 3 bits 100 (XOR)
+0000_0001   // XOR (accumulator: 11111111, RAM address 1: 11111111) result: 00000000
+
+001_00000   // SKZ Test: first 3 bits 001 (SKZ)
+0000_0000   // Skip the next instruction if ALU's data is 0 (ALU output is now 00000000 because of XOR operation, will skip)
+
+000_00000   // HLT (will process if SKZ failed)
+0000_0000
+
+000_00000   // HLT (will process if everything goes fine)
+0000_0000   // Test ends here
+
+111_00000   
+0000_0000
+
+
+// @3f: Write bits below to ROM sequentially, from address 3f
+
+@3f
+111_00000  // JMP Test: first 3 bits 111 (JMP)
+0000_0110  // Jump to ROM address 110 (6)
+
+0000_0000  // HLT (will process if JMP failed)
