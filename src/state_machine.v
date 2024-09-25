@@ -1,24 +1,41 @@
-`timescale 1ns / 1ps
-
+// 状态机：CPU的控制核心，根据当前状态与指令，产生各模块控制信号，控制各模块实现程序预期功能
 module state_machine(
+    // 时钟输入
 	input clk,
+    // 复位
 	input rst_n,
+    // 来自算数逻辑运算单元的“运算结果为0”标志输入
 	input zero,
+    // 操作数
 	input [2:0] operation,
+    // 使能
 	input en,
+    // 取指令信号
+    output reg fetch,
+    // 算数逻辑运算单元使能信号
+    output reg alu_en,
+    // 程序计数器自增信号
 	output reg pc_inc,
+    // 读取存储器信号
 	output reg rd,
+    // 写入存储器信号
 	output reg wr,
+    // 累加器使能信号
 	output reg load_acc,
+    // 指令寄存器使能信号
 	output reg load_ir,
+    // 程序计数器装载使能信号
 	output reg load_pc,
-	output reg datacontrol_en,
-	output reg halt,
-	output reg [7:0] state
+    // 数据控制器使能信号
+	output reg datacontrol_en
 );
 
+    // 当前状态
+	reg [7:0] state;
+
+    // 指令助记符
 	parameter 
-	HLT = 3'b000,
+	MOV = 3'b000,
 	SKZ = 3'b001,
 	ADD = 3'b010,
 	AND = 3'b011,
@@ -27,6 +44,7 @@ module state_machine(
 	STO = 3'b110,
 	JMP = 3'b111;
 
+    // 定义状态
 	parameter 
 	IDLE = 8'b0000_0000,
 	S1 = 8'b0000_0001,
@@ -38,138 +56,136 @@ module state_machine(
 	S7 = 8'b0100_0000,
 	S8 = 8'b1000_0000;  
 	
-	reg ena;
+    // 次态
 	reg [7:0] next_state;
 	
-	always@(posedge clk or negedge rst_n) begin
-		if(!rst_n) ena <= 1'b0;
-		else
-			if(en) ena <= 1'b1;
-	end
-	
-	always @(state) begin
+	always @(*) begin
 		case(state)
-			IDLE: next_state = S1;
-			S1: next_state = S2;
-			S2: next_state = S3;
-			S3: next_state = S4;
-			S4: next_state = S5;
-			S5: next_state = S6;
-			S6: next_state = S7;
-			S7: next_state = S8;
-			S8: next_state = S1;
-			default: next_state = IDLE;
+			IDLE: next_state <= S1;
+			S1: next_state <= S2;
+			S2: next_state <= S3;
+			S3: next_state <= S4;
+			S4: next_state <= S5;
+			S5: next_state <= S6;
+			S6: next_state <= S7;
+			S7: next_state <= S8;
+			S8: next_state <= S1;
+			default: next_state <= IDLE;
 		endcase
 	end
 	
-	always@(posedge clk) begin
-		if(!ena) state <= S1;
+	always@(posedge clk or negedge rst_n) begin
+		if(!rst_n) state <= IDLE;
 		else
 			state <= next_state;
 	end
 	
 	
-	always@(posedge clk) begin
-		if(!ena) begin
-			{pc_inc, rd, wr, load_acc} <= 4'b0000;
-			{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
-		end
-		else 
-			ctl_cycle;
+	always@(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            {pc_inc, rd, wr, load_acc} <= 4'b0000;
+			{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
+        end
+		else control_cycle;
 	end
 	
-	task ctl_cycle;
+	task control_cycle;
 		begin
 			case(state)
 				S1:begin
 					{pc_inc, rd, wr, load_acc} <= 4'b0100;
-					{load_ir, load_pc, datacontrol_en, halt} <= 4'b1000;
+					{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b10100;
 				end
+
 				S2:begin
 					{pc_inc, rd, wr, load_acc} <= 4'b1100;
-					{load_ir, load_pc, datacontrol_en, halt} <= 4'b1000;
+					{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b10100;
 				end
+
 				S3:begin
 					{pc_inc, rd, wr, load_acc} <= 4'b0000;
-					{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+					{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 				end
+
 				S4:begin
-					if(operation == HLT) begin
-						{pc_inc, rd, wr, load_acc} <= 4'b1000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0001;
-					end
-					else begin
-						{pc_inc, rd, wr, load_acc} <= 4'b1000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
-					end
+                    {pc_inc, rd, wr, load_acc} <= 4'b1000;
+					{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b01000;
 				end
+
 				S5:begin
-					if(operation == JMP) begin
+                    if(operation == JMP) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0100;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b01010;
 					end
 					else if(operation == ADD || operation == AND || operation == XOR || operation == LDA) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0100;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b01000;
 					end
 					else if(operation == STO) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0010;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b01001;
 					end
 					else begin
-						{pc_inc, rd, wr, load_acc} <= 4'b0000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+                        // MOV
+						{pc_inc, rd, wr, load_acc} <= 4'b0001;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b01000;
 					end
+
 				end
+
 				S6:begin
 					if(operation == ADD || operation == AND || operation == XOR || operation == LDA) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0101;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 					end
 					else if(operation == SKZ && zero) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b1000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 					end
 					else if(operation == JMP) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b1000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0100;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00010;
 					end
 					else if(operation == STO) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0010;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0010;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00001;
 					end
 					else begin
+                        // MOV
 						{pc_inc, rd, wr, load_acc} <= 4'b0000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 					end
 				end
+
 				S7:begin
 					if(operation == ADD || operation == AND || operation == XOR || operation == LDA) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0100;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 					end
 					else if(operation == STO) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0010;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00001;
 					end
 					else begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 					end
 				end
+
 				S8:begin
 					if(operation == SKZ && zero) begin
 						{pc_inc, rd, wr, load_acc} <= 4'b1000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 					end
 					else begin
 						{pc_inc, rd, wr, load_acc} <= 4'b0000;
-						{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 					end
 				end
+                
 				default:begin
 					{pc_inc, rd, wr, load_acc} <= 4'b0000;
-					{load_ir, load_pc, datacontrol_en, halt} <= 4'b0000;
+					{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b00000;
 				end
 			endcase
 		end

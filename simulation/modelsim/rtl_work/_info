@@ -1,0 +1,300 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/CPU_example/simulation/modelsim
+T_opt
+!s110 1727289709
+VWE:7Fn:1ImkL]_Ql48JTL2
+Z1 04 11 4 work risc_cpu_tb fast 0
+=1-d8bbc1b246a1-66f4596d-82-4dec
+Z2 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work +acc
+n@_opt
+Z3 OL;O;10.4;61
+R0
+T_opt1
+!s110 1727290192
+Vn9`K^k<K@]KZUOQmXc?kP0
+R1
+=1-d8bbc1b246a1-66f45b50-251-5140
+R2
+n@_opt1
+R3
+vaccumulator
+Z4 !s110 1727290191
+!i10b 1
+!s100 4h<>;_^_R`RT3`Q^X79g^0
+ICem9QXgS9b6K:kJ7io>e=3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 dC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/simulation/modelsim
+w1727098108
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/accumulator.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/accumulator.v
+L0 2
+Z7 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1727290191.666000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/accumulator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/accumulator.v|
+!i113 0
+Z8 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vaddress_decoder
+Z10 !s110 1727290190
+!i10b 1
+!s100 ;edjPB>dgSLedbbdHOWh]3
+IV`Ch7kQk8;o7Kd]Q32MbS1
+R5
+R6
+w1727288257
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_decoder.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_decoder.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290190.582000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_decoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_decoder.v|
+!i113 0
+R8
+R9
+vaddress_multiplexer
+R4
+!i10b 1
+!s100 >aP724SoFVNF6;5=Qbm`i0
+IcQSBG5GPW_@2hgHmLXd>71
+R5
+R6
+w1727087837
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_multiplexer.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_multiplexer.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290191.556000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_multiplexer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_multiplexer.v|
+!i113 0
+R8
+R9
+valu
+R4
+!i10b 1
+!s100 4n9NVh]FHC7NUV`VGSj`[0
+I_o<A7ibl?bI;a2jWA8fNS2
+R5
+R6
+w1727285622
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/alu.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/alu.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290191.446000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/alu.v|
+!i113 0
+R8
+R9
+vdata_controller
+R4
+!i10b 1
+!s100 5IhHT]cU]<THEka7UidlL1
+IoMR`4]CP`YYA4BS:T9PdT0
+R5
+R6
+w1727087418
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/data_controller.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/data_controller.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290191.330000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/data_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/data_controller.v|
+!i113 0
+R8
+R9
+vinstruction_register
+R4
+!i10b 1
+!s100 d2jcSGX1<hnSG]L@3OjTn0
+IlSL]g?:C=Yml612SROI]P1
+R5
+R6
+w1727283316
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/instruction_register.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/instruction_register.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290191.223000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/instruction_register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/instruction_register.v|
+!i113 0
+R8
+R9
+vprogram_counter
+R4
+!i10b 1
+!s100 YdReG@KSbjKYG[Mo3_5gh1
+I1BK:4eBlInLj3JD;E:7ID1
+R5
+R6
+w1727283682
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/program_counter.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/program_counter.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290191.123000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/program_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/program_counter.v|
+!i113 0
+R8
+R9
+vram
+R10
+!i10b 1
+!s100 <XA=JCPLcNf@dljzVGjg^0
+IT6JTb7Eb2PR1n7ec60S[M1
+R5
+R6
+w1727289893
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/ram.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/ram.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290190.841000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/ram.v|
+!i113 0
+R8
+R9
+vrisc_cpu
+R4
+!i10b 1
+!s100 _1z8Weem6c_l[hZhLCPkd3
+IANKzPJl?iPDQ>H7EmEA=b3
+R5
+R6
+w1727283723
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290191.023000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu.v|
+!i113 0
+R8
+R9
+vrisc_cpu_tb
+R4
+!i10b 1
+!s100 A^<X<<ZjeF]b1cdS_1Jjf3
+IiMhmGZb[7KCz8>C<G2a6F0
+R5
+R6
+w1727289668
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v
+L0 5
+R7
+r1
+!s85 0
+31
+!s108 1727290191.771000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v|
+!i113 0
+R8
+!s92 -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vrisc_cpu_with_prepherals
+R10
+!i10b 1
+!s100 VV[8TCMhH[nm:BC6G<0232
+Ia<<@O3mN:cTBS]Y9dl8490
+R5
+R6
+w1727288178
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu_with_peripherals.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu_with_peripherals.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290190.660000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu_with_peripherals.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu_with_peripherals.v|
+!i113 0
+R8
+R9
+vrom
+R10
+!i10b 1
+!s100 <leh4k6AZXMja<HKEmA5z2
+I<nFVaSo9XggB7;DiQOcla3
+R5
+R6
+w1727289953
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/rom.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/rom.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290190.744000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/rom.v|
+!i113 0
+R8
+R9
+vstate_machine
+R10
+!i10b 1
+!s100 HanfakBS<XAVkjI[1i2`61
+ITZ<:n]]QFn5m_dA<Ng;A<1
+R5
+R6
+w1727229306
+8C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/state_machine.v
+FC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/state_machine.v
+L0 2
+R7
+r1
+!s85 0
+31
+!s108 1727290190.928000
+!s107 C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/state_machine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src|C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/state_machine.v|
+!i113 0
+R8
+R9

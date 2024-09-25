@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Sep 26 02:49:32 2024
+Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
+Revision Name : CPU_example
+Top-level Entity Name : risc_cpu_with_prepherals
+Family : MAX 10
+Device : 10M08DAF484C8G
+Timing Models : Preliminary
+Total logic elements : 1 / 8,064 ( < 1 % )
+    Total combinational functions : 1 / 8,064 ( < 1 % )
+    Dedicated logic registers : 0 / 8,064 ( 0 % )
+Total registers : 0
+Total pins : 2 / 250 ( < 1 % )
+Total virtual pins : 0
+Total memory bits : 0 / 387,072 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

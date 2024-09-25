@@ -1,0 +1,882 @@
+# Reading C:/modeltech64_10.4/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do CPU_example_run_msim_rtl_verilog.do
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+# vlib verilog_libs/altera_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
+# 
+# vmap altera_ver ./verilog_libs/altera_ver
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet altera_ver ./verilog_libs/altera_ver 
+# Copying C:/modeltech64_10.4/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/modeltech64_10.4/win64/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# vlog -vlog01compat -work altera_ver {c:/altera/quartus/eda/sim_lib/altera_primitives.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:44 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work altera_ver c:/altera/quartus/eda/sim_lib/altera_primitives.v 
+# -- Compiling module global
+# -- Compiling module carry
+# -- Compiling module cascade
+# -- Compiling module carry_sum
+# -- Compiling module exp
+# -- Compiling module soft
+# -- Compiling module opndrn
+# -- Compiling module row_global
+# -- Compiling module TRI
+# -- Compiling module lut_input
+# -- Compiling module lut_output
+# -- Compiling module latch
+# -- Compiling module dlatch
+# -- Compiling module prim_gdff
+# -- Compiling module dff
+# -- Compiling module dffe
+# -- Compiling module dffea
+# -- Compiling module dffeas
+# -- Compiling module prim_gtff
+# -- Compiling module tff
+# -- Compiling module tffe
+# -- Compiling module prim_gjkff
+# -- Compiling module jkff
+# -- Compiling module jkffe
+# -- Compiling module prim_gsrff
+# -- Compiling module srff
+# -- Compiling module srffe
+# -- Compiling module clklock
+# -- Compiling module alt_inbuf
+# -- Compiling module alt_outbuf
+# -- Compiling module alt_outbuf_tri
+# -- Compiling module alt_iobuf
+# -- Compiling module alt_inbuf_diff
+# -- Compiling module alt_outbuf_diff
+# -- Compiling module alt_outbuf_tri_diff
+# -- Compiling module alt_iobuf_diff
+# -- Compiling module alt_bidir_diff
+# -- Compiling module alt_bidir_buf
+# -- Compiling UDP PRIM_GDFF_LOW
+# -- Compiling UDP PRIM_GDFF_HIGH
+# 
+# Top level modules:
+# 	global
+# 	carry
+# 	cascade
+# 	carry_sum
+# 	exp
+# 	soft
+# 	opndrn
+# 	row_global
+# 	TRI
+# 	lut_input
+# 	lut_output
+# 	latch
+# 	dlatch
+# 	dff
+# 	dffe
+# 	dffea
+# 	dffeas
+# 	tff
+# 	tffe
+# 	jkff
+# 	jkffe
+# 	srff
+# 	srffe
+# 	clklock
+# 	alt_inbuf
+# 	alt_outbuf
+# 	alt_outbuf_tri
+# 	alt_iobuf
+# 	alt_inbuf_diff
+# 	alt_outbuf_diff
+# 	alt_outbuf_tri_diff
+# 	alt_iobuf_diff
+# 	alt_bidir_diff
+# 	alt_bidir_buf
+# End time: 02:49:44 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/lpm_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
+# 
+# vmap lpm_ver ./verilog_libs/lpm_ver
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet lpm_ver ./verilog_libs/lpm_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work lpm_ver {c:/altera/quartus/eda/sim_lib/220model.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:45 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/altera/quartus/eda/sim_lib/220model.v 
+# -- Compiling module LPM_MEMORY_INITIALIZATION
+# -- Compiling module LPM_HINT_EVALUATION
+# -- Compiling module LPM_DEVICE_FAMILIES
+# -- Compiling module lpm_constant
+# -- Compiling module lpm_inv
+# -- Compiling module lpm_and
+# -- Compiling module lpm_or
+# -- Compiling module lpm_xor
+# -- Compiling module lpm_bustri
+# -- Compiling module lpm_mux
+# -- Compiling module lpm_decode
+# -- Compiling module lpm_clshift
+# -- Compiling module lpm_add_sub
+# -- Compiling module lpm_compare
+# -- Compiling module lpm_mult
+# -- Compiling module lpm_divide
+# -- Compiling module lpm_abs
+# -- Compiling module lpm_counter
+# -- Compiling module lpm_latch
+# -- Compiling module lpm_ff
+# -- Compiling module lpm_shiftreg
+# -- Compiling module lpm_ram_dq
+# -- Compiling module lpm_ram_dp
+# -- Compiling module lpm_ram_io
+# -- Compiling module lpm_rom
+# -- Compiling module lpm_fifo
+# -- Compiling module lpm_fifo_dc_dffpipe
+# -- Compiling module lpm_fifo_dc_fefifo
+# -- Compiling module lpm_fifo_dc_async
+# -- Compiling module lpm_fifo_dc
+# -- Compiling module lpm_inpad
+# -- Compiling module lpm_outpad
+# -- Compiling module lpm_bipad
+# 
+# Top level modules:
+# 	lpm_constant
+# 	lpm_inv
+# 	lpm_and
+# 	lpm_or
+# 	lpm_xor
+# 	lpm_bustri
+# 	lpm_mux
+# 	lpm_decode
+# 	lpm_clshift
+# 	lpm_add_sub
+# 	lpm_compare
+# 	lpm_mult
+# 	lpm_divide
+# 	lpm_abs
+# 	lpm_counter
+# 	lpm_latch
+# 	lpm_ff
+# 	lpm_shiftreg
+# 	lpm_ram_dq
+# 	lpm_ram_dp
+# 	lpm_ram_io
+# 	lpm_rom
+# 	lpm_fifo
+# 	lpm_fifo_dc
+# 	lpm_inpad
+# 	lpm_outpad
+# 	lpm_bipad
+# End time: 02:49:45 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/sgate_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
+# 
+# vmap sgate_ver ./verilog_libs/sgate_ver
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet sgate_ver ./verilog_libs/sgate_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work sgate_ver {c:/altera/quartus/eda/sim_lib/sgate.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:45 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/altera/quartus/eda/sim_lib/sgate.v 
+# -- Compiling module oper_add
+# -- Compiling module oper_addsub
+# -- Compiling module mux21
+# -- Compiling module io_buf_tri
+# -- Compiling module io_buf_opdrn
+# -- Compiling module oper_mult
+# -- Compiling module tri_bus
+# -- Compiling module oper_div
+# -- Compiling module oper_mod
+# -- Compiling module oper_left_shift
+# -- Compiling module oper_right_shift
+# -- Compiling module oper_rotate_left
+# -- Compiling module oper_rotate_right
+# -- Compiling module oper_less_than
+# -- Compiling module oper_mux
+# -- Compiling module oper_selector
+# -- Compiling module oper_decoder
+# -- Compiling module oper_bus_mux
+# -- Compiling module oper_latch
+# 
+# Top level modules:
+# 	oper_add
+# 	oper_addsub
+# 	mux21
+# 	io_buf_tri
+# 	io_buf_opdrn
+# 	oper_mult
+# 	tri_bus
+# 	oper_div
+# 	oper_mod
+# 	oper_left_shift
+# 	oper_right_shift
+# 	oper_rotate_left
+# 	oper_rotate_right
+# 	oper_less_than
+# 	oper_mux
+# 	oper_selector
+# 	oper_decoder
+# 	oper_bus_mux
+# 	oper_latch
+# End time: 02:49:45 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_mf_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
+# 
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet altera_mf_ver ./verilog_libs/altera_mf_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_mf_ver {c:/altera/quartus/eda/sim_lib/altera_mf.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:46 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/altera/quartus/eda/sim_lib/altera_mf.v 
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module MF_cycloneiiigl_m_cntr
+# -- Compiling module MF_cycloneiiigl_n_cntr
+# -- Compiling module MF_cycloneiiigl_scale_cntr
+# -- Compiling module cycloneiiigl_post_divider
+# -- Compiling module MF_cycloneiiigl_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratixv_local_clk_divider
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altera_syncram_derived
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module altsyncram_body
+# -- Compiling module alt3pram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module alt_cal_mm
+# -- Compiling module alt_cal_c3gxb
+# -- Compiling module alt_cal_sv
+# -- Compiling module alt_cal_av
+# -- Compiling module alt_aeq_s4
+# -- Compiling module alt_eyemon
+# -- Compiling module alt_dfe
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module sld_virtual_jtag_basic
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altclklock
+# 	altddio_bidir
+# 	altdpram
+# 	alt3pram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	alt_cal_mm
+# 	alt_cal_c3gxb
+# 	alt_cal_sv
+# 	alt_cal_av
+# 	alt_aeq_s4
+# 	alt_eyemon
+# 	alt_dfe
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	sld_virtual_jtag_basic
+# 	altsource_probe
+# End time: 02:49:47 on Sep 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_lnsim_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
+# 
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
+# Modifying modelsim.ini
+# vlog -sv -work altera_lnsim_ver {c:/altera/quartus/eda/sim_lib/altera_lnsim.sv}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:47 on Sep 26,2024
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/altera/quartus/eda/sim_lib/altera_lnsim.sv 
+# -- Compiling package altera_lnsim_functions
+# -- Compiling package altera_generic_pll_functions
+# -- Compiling module generic_pll
+# -- Importing package altera_lnsim_functions
+# -- Importing package altera_generic_pll_functions
+# -- Compiling module generic_cdr
+# -- Compiling module common_28nm_ram_pulse_generator
+# -- Compiling module common_28nm_ram_register
+# -- Compiling module common_28nm_ram_block
+# -- Compiling module generic_m20k
+# -- Compiling module generic_m10k
+# -- Compiling module common_28nm_mlab_cell_pulse_generator
+# -- Compiling module common_28nm_mlab_latch
+# -- Compiling module common_28nm_mlab_cell_core
+# -- Compiling module common_porta_latches
+# -- Compiling module generic_28nm_hp_mlab_cell_impl
+# -- Compiling module common_porta_registers
+# -- Compiling module generic_28nm_lc_mlab_cell_impl
+# -- Compiling module generic_mux
+# -- Compiling module generic_device_pll
+# -- Compiling module common_14nm_ram_pulse_generator
+# -- Compiling module common_14nm_ram_register
+# -- Compiling module fourteennm_m20k
+# -- Compiling module nadder_m20k
+# -- Compiling module altera_mult_add
+# -- Compiling module altera_mult_add_rtl
+# -- Compiling module ama_signed_extension_function
+# -- Compiling module ama_dynamic_signed_function
+# -- Compiling module ama_register_function
+# -- Compiling module ama_register_with_ext_function
+# -- Compiling module ama_data_split_reg_ext_function
+# -- Compiling module ama_coef_reg_ext_function
+# -- Compiling module ama_adder_function
+# -- Compiling module ama_multiplier_function
+# -- Compiling module ama_preadder_function
+# -- Compiling module ama_chainout_adder_accumulator_function
+# -- Compiling module ama_systolic_adder_function
+# -- Compiling module ama_scanchain
+# -- Compiling module ama_latency_function
+# -- Compiling module altera_pll_reconfig_tasks
+# -- Compiling module altera_syncram
+# -- Compiling module ALTERA_LNSIM_MEMORY_INITIALIZATION
+# -- Compiling module altera_stratixv_pll
+# -- Compiling module altera_arriav_pll
+# -- Compiling module altera_arriavgz_pll
+# -- Compiling module altera_cyclonev_pll
+# -- Compiling module altera_pll
+# -- Compiling module dps_extra_kick
+# -- Compiling module dprio_init
+# -- Compiling module dps_pulse_gen
+# -- Compiling module twentynm_iopll_ip
+# -- Compiling module altera_pll_dps_lcell_comb
+# 
+# Top level modules:
+# 	generic_cdr
+# 	generic_m20k
+# 	generic_m10k
+# 	common_porta_latches
+# 	generic_28nm_hp_mlab_cell_impl
+# 	generic_28nm_lc_mlab_cell_impl
+# 	generic_mux
+# 	generic_device_pll
+# 	nadder_m20k
+# 	altera_mult_add
+# 	altera_pll_reconfig_tasks
+# 	altera_syncram
+# 	altera_pll
+# End time: 02:49:48 on Sep 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/fiftyfivenm_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/fiftyfivenm_ver".
+# 
+# vmap fiftyfivenm_ver ./verilog_libs/fiftyfivenm_ver
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet fiftyfivenm_ver ./verilog_libs/fiftyfivenm_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work fiftyfivenm_ver {c:/altera/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:48 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/altera/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
+# -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
+# -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
+# -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS_HIGH
+# -- Compiling module fiftyfivenm_dffe
+# -- Compiling module fiftyfivenm_mux21
+# -- Compiling module fiftyfivenm_mux41
+# -- Compiling module fiftyfivenm_and1
+# -- Compiling module fiftyfivenm_and16
+# -- Compiling module fiftyfivenm_bmux21
+# -- Compiling module fiftyfivenm_b17mux21
+# -- Compiling module fiftyfivenm_nmux21
+# -- Compiling module fiftyfivenm_b5mux21
+# -- Compiling module fiftyfivenm_latch
+# -- Compiling module fiftyfivenm_routing_wire
+# -- Compiling module fiftyfivenm_lcell_comb
+# -- Compiling module fiftyfivenm_ff
+# -- Compiling module fiftyfivenm_ram_pulse_generator
+# -- Compiling module fiftyfivenm_ram_register
+# -- Compiling module fiftyfivenm_ram_block
+# -- Compiling module fiftyfivenm_mac_data_reg
+# -- Compiling module fiftyfivenm_mac_sign_reg
+# -- Compiling module fiftyfivenm_mac_mult_internal
+# -- Compiling module fiftyfivenm_mac_mult
+# -- Compiling module fiftyfivenm_mac_out
+# -- Compiling module fiftyfivenm_pseudo_diff_out
+# -- Compiling module fiftyfivenm_io_pad
+# -- Compiling module fiftyfivenm_m_cntr
+# -- Compiling module fiftyfivenm_n_cntr
+# -- Compiling module fiftyfivenm_scale_cntr
+# -- Compiling module fiftyfivenm_pll_reg
+# -- Compiling module fiftyfivenm_pll
+# -- Compiling module fiftyfivenm_ena_reg
+# -- Compiling module fiftyfivenm_clkctrl
+# -- Compiling module fiftyfivenm_io_latch
+# -- Compiling module fiftyfivenm_phy_clkbuf
+# -- Compiling module fiftyfivenm_io_clock_divider
+# -- Compiling module fiftyfivenm_io_ibuf
+# -- Compiling module fiftyfivenm_io_obuf
+# -- Compiling module fiftyfivenm_ddio_out
+# -- Compiling module fiftyfivenm_ddio_oe
+# -- Compiling module fiftyfivenm_ddio_in
+# -- Compiling module fiftyfivenm_unvm
+# -- Compiling module fiftyfivenm_asmiblock
+# -- Compiling module fiftyfivenm_chipidblock
+# -- Compiling module fiftyfivenm_oscillator
+# -- Compiling module fiftyfivenm_controller
+# -- Compiling module fiftyfivenm_crcblock
+# -- Compiling module fiftyfivenm_rublock
+# -- Compiling module fiftyfivenm_jtag
+# -- Compiling module fiftyfivenm_adcblock
+# -- Compiling module fiftyfivenm_phase_detector
+# 
+# Top level modules:
+# 	fiftyfivenm_dffe
+# 	fiftyfivenm_mux21
+# 	fiftyfivenm_and1
+# 	fiftyfivenm_and16
+# 	fiftyfivenm_bmux21
+# 	fiftyfivenm_b17mux21
+# 	fiftyfivenm_nmux21
+# 	fiftyfivenm_b5mux21
+# 	fiftyfivenm_latch
+# 	fiftyfivenm_routing_wire
+# 	fiftyfivenm_lcell_comb
+# 	fiftyfivenm_ff
+# 	fiftyfivenm_ram_block
+# 	fiftyfivenm_mac_mult
+# 	fiftyfivenm_mac_out
+# 	fiftyfivenm_pseudo_diff_out
+# 	fiftyfivenm_io_pad
+# 	fiftyfivenm_pll_reg
+# 	fiftyfivenm_pll
+# 	fiftyfivenm_clkctrl
+# 	fiftyfivenm_io_latch
+# 	fiftyfivenm_phy_clkbuf
+# 	fiftyfivenm_io_clock_divider
+# 	fiftyfivenm_io_ibuf
+# 	fiftyfivenm_io_obuf
+# 	fiftyfivenm_ddio_out
+# 	fiftyfivenm_ddio_oe
+# 	fiftyfivenm_ddio_in
+# 	fiftyfivenm_unvm
+# 	fiftyfivenm_asmiblock
+# 	fiftyfivenm_chipidblock
+# 	fiftyfivenm_oscillator
+# 	fiftyfivenm_controller
+# 	fiftyfivenm_crcblock
+# 	fiftyfivenm_rublock
+# 	fiftyfivenm_jtag
+# 	fiftyfivenm_adcblock
+# 	fiftyfivenm_phase_detector
+# End time: 02:49:49 on Sep 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work fiftyfivenm_ver {c:/altera/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:49 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/altera/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
+# 
+# Top level modules:
+# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is TrWyFowrd@MSI-GS66-TRWYFO.
+# 
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# 
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_decoder.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:50 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_decoder.v 
+# -- Compiling module address_decoder
+# 
+# Top level modules:
+# 	address_decoder
+# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu_with_peripherals.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:50 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu_with_peripherals.v 
+# -- Compiling module risc_cpu_with_prepherals
+# 
+# Top level modules:
+# 	risc_cpu_with_prepherals
+# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/rom.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:50 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/ram.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:50 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/state_machine.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:50 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/state_machine.v 
+# -- Compiling module state_machine
+# 
+# Top level modules:
+# 	state_machine
+# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:51 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu.v 
+# -- Compiling module risc_cpu
+# 
+# Top level modules:
+# 	risc_cpu
+# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/program_counter.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:51 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/program_counter.v 
+# -- Compiling module program_counter
+# 
+# Top level modules:
+# 	program_counter
+# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/instruction_register.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:51 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/instruction_register.v 
+# -- Compiling module instruction_register
+# 
+# Top level modules:
+# 	instruction_register
+# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/data_controller.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:51 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/data_controller.v 
+# -- Compiling module data_controller
+# 
+# Top level modules:
+# 	data_controller
+# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/alu.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:51 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_multiplexer.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:51 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_multiplexer.v 
+# -- Compiling module address_multiplexer
+# 
+# Top level modules:
+# 	address_multiplexer
+# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/accumulator.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:51 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/accumulator.v 
+# -- Compiling module accumulator
+# 
+# Top level modules:
+# 	accumulator
+# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v}
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 02:49:51 on Sep 26,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v 
+# -- Compiling module risc_cpu_tb
+# 
+# Top level modules:
+# 	risc_cpu_tb
+# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  risc_cpu_tb
+# vsim -gui "+altera" -l msim_transcript -do "CPU_example_run_msim_rtl_verilog.do" 
+# Start time: 02:49:51 on Sep 26,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "state_machine(fast)".
+# 
+# Loading work.risc_cpu_tb(fast)
+# Loading work.risc_cpu_with_prepherals(fast)
+# Loading work.risc_cpu(fast)
+# Loading work.program_counter(fast)
+# Loading work.instruction_register(fast)
+# Loading work.accumulator(fast)
+# Loading work.alu(fast)
+# Loading work.state_machine(fast)
+# Loading work.data_controller(fast)
+# Loading work.address_multiplexer(fast)
+# Loading work.ram(fast)
+# Loading work.rom(fast)
+# Loading work.address_decoder(fast)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: TrWyFowrd  Hostname: MSI-GS66-TRWYFO  ProcessID: 19948
+# 
+#           Attempting to use alternate WLF file "./wlftzticwt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftzticwt
+# 
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Loading RAM
+# RAM Load Success
+# Loading ROM
+# ROM Load Success
+# Resetting
+# Operation Changed
+# Reset Finished
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# Operation Changed
+# ** Note: $stop    : C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v(55)
+#    Time: 90200 ns  Iteration: 0  Instance: /risc_cpu_tb
+# Break in Module risc_cpu_tb at C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v line 55
+# End time: 02:50:58 on Sep 26,2024, Elapsed time: 0:01:07
+# Errors: 0, Warnings: 2
