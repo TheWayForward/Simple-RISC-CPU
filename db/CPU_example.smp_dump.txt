@@ -1,5 +1,5 @@
 
-State Machine - |risc_cpu_with_prepherals|risc_cpu:cpu|state_machine:cpu_sm|state
+State Machine - |risc_cpu_with_peripherals|risc_cpu:cpu|state_machine:cpu_sm|state
 Name state.IDLE state.S8 state.S7 state.S6 state.S5 state.S4 state.S3 state.S2 state.S1 
 state.IDLE 0 0 0 0 0 0 0 0 0 
 state.S1 1 0 0 0 0 0 0 0 1 

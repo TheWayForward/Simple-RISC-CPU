@@ -30,7 +30,7 @@
 #          Updated modelsim.ini.
 # vlog -vlog01compat -work altera_ver {c:/altera/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:44 on Sep 26,2024
+# Start time: 21:55:20 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/altera/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -108,7 +108,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 02:49:44 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:21 on Sep 29,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -120,7 +120,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/altera/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:45 on Sep 26,2024
+# Start time: 21:55:21 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/altera/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -184,7 +184,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 02:49:45 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:21 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -196,7 +196,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/altera/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:45 on Sep 26,2024
+# Start time: 21:55:21 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/altera/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -238,7 +238,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 02:49:45 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:21 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -250,7 +250,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/altera/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:46 on Sep 26,2024
+# Start time: 21:55:21 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/altera/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -377,7 +377,7 @@
 # 	altserial_flash_loader
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 02:49:47 on Sep 26,2024, Elapsed time: 0:00:01
+# End time: 21:55:22 on Sep 29,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -389,7 +389,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/altera/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:47 on Sep 26,2024
+# Start time: 21:55:22 on Sep 29,2024
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/altera/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_pll_reconfig_tasks
 # 	altera_syncram
 # 	altera_pll
-# End time: 02:49:48 on Sep 26,2024, Elapsed time: 0:00:01
+# End time: 21:55:23 on Sep 29,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -470,7 +470,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/altera/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:48 on Sep 26,2024
+# Start time: 21:55:23 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/altera/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -563,15 +563,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 02:49:49 on Sep 26,2024, Elapsed time: 0:00:01
+# End time: 21:55:23 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/altera/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:49 on Sep 26,2024
+# Start time: 21:55:23 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/altera/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:01
+# End time: 21:55:24 on Sep 29,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -589,145 +589,145 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_decoder.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:50 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_decoder.v 
 # -- Compiling module address_decoder
 # 
 # Top level modules:
 # 	address_decoder
-# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu_with_peripherals.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:50 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu_with_peripherals.v 
-# -- Compiling module risc_cpu_with_prepherals
+# -- Compiling module risc_cpu_with_peripherals
 # 
 # Top level modules:
-# 	risc_cpu_with_prepherals
-# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# 	risc_cpu_with_peripherals
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/rom.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:50 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/rom.v 
 # -- Compiling module rom
 # 
 # Top level modules:
 # 	rom
-# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/ram.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:50 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/ram.v 
 # -- Compiling module ram
 # 
 # Top level modules:
 # 	ram
-# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/state_machine.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:50 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/state_machine.v 
 # -- Compiling module state_machine
 # 
 # Top level modules:
 # 	state_machine
-# End time: 02:49:50 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/risc_cpu.v 
 # -- Compiling module risc_cpu
 # 
 # Top level modules:
 # 	risc_cpu
-# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/program_counter.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/program_counter.v 
 # -- Compiling module program_counter
 # 
 # Top level modules:
 # 	program_counter
-# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/instruction_register.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/instruction_register.v 
 # -- Compiling module instruction_register
 # 
 # Top level modules:
 # 	instruction_register
-# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/data_controller.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/data_controller.v 
 # -- Compiling module data_controller
 # 
 # Top level modules:
 # 	data_controller
-# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/alu.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_multiplexer.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:25 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/address_multiplexer.v 
 # -- Compiling module address_multiplexer
 # 
 # Top level modules:
 # 	address_multiplexer
-# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:25 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/accumulator.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:26 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/src/accumulator.v 
 # -- Compiling module accumulator
 # 
 # Top level modules:
 # 	accumulator
-# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:26 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb {C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v}
 # Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:26 on Sep 29,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb" C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v 
 # -- Compiling module risc_cpu_tb
 # 
 # Top level modules:
 # 	risc_cpu_tb
-# End time: 02:49:51 on Sep 26,2024, Elapsed time: 0:00:00
+# End time: 21:55:26 on Sep 29,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  risc_cpu_tb
 # vsim -gui "+altera" -l msim_transcript -do "CPU_example_run_msim_rtl_verilog.do" 
-# Start time: 02:49:51 on Sep 26,2024
+# Start time: 21:55:26 on Sep 29,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # 
 # ** Note: (vopt-143) Recognized 1 FSM in module "state_machine(fast)".
 # 
 # Loading work.risc_cpu_tb(fast)
-# Loading work.risc_cpu_with_prepherals(fast)
+# Loading work.risc_cpu_with_peripherals(fast)
 # Loading work.risc_cpu(fast)
 # Loading work.program_counter(fast)
 # Loading work.instruction_register(fast)
@@ -741,15 +741,6 @@
 # Loading work.address_decoder(fast)
 # 
 # add wave *
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
-#           File in use by: TrWyFowrd  Hostname: MSI-GS66-TRWYFO  ProcessID: 19948
-# 
-#           Attempting to use alternate WLF file "./wlftzticwt".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
-#           Using alternate file: ./wlftzticwt
-# 
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
@@ -761,122 +752,21 @@
 # Loading ROM
 # ROM Load Success
 # Resetting
-# Operation Changed
 # Reset Finished
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# Operation Changed
-# ** Note: $stop    : C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v(55)
+#      200.0ns   0
+#    10400.0ns   1
+#    24800.0ns   2
+#    32000.0ns   3
+#    39200.0ns   5
+#    46400.0ns   8
+#    53600.0ns  13
+#    60800.0ns  21
+#    68000.0ns  34
+#    75200.0ns  55
+#    82400.0ns  89
+#    89600.0ns 144
+# ** Note: $stop    : C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v(57)
 #    Time: 90200 ns  Iteration: 0  Instance: /risc_cpu_tb
-# Break in Module risc_cpu_tb at C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v line 55
-# End time: 02:50:58 on Sep 26,2024, Elapsed time: 0:01:07
-# Errors: 0, Warnings: 2
+# Break in Module risc_cpu_tb at C:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/Simple-RISC-CPU/tb/risc_cpu_tb.v line 57
+# End time: 22:28:49 on Sep 29,2024, Elapsed time: 0:33:23
+# Errors: 0, Warnings: 0

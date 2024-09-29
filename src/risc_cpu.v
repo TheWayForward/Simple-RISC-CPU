@@ -85,7 +85,6 @@ module risc_cpu(
 		.rst_n(rst_n),
 		.zero(zero),
 		.operation(operation),
-		.en(fetch),
         .fetch(fetch),
         .alu_en(alu_en),
 		.pc_inc(pc_inc),

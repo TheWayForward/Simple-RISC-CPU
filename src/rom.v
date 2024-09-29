@@ -12,7 +12,7 @@ module rom(
 
     // 8 * 256存储单元
 	reg [7:0] mem [8'hff:0];
-    // 使能与读信号均有效时，往数据总线写指定地址存储的数据，否则高阻
+    // 使能与读信号均有效时，向数据总线写指定地址存储的数据，否则高阻
 	assign data = (en & rd) ? mem[addr[7:0]] : 8'bzzzz_zzzz;
 
 endmodule

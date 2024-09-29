@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/TrWyFowrd/Desktop/Box/learning/learning_verilog/example/others/cpu/CPU_example/simulation/modelsim
 vio_buf_opdrn
-Z0 !s110 1727290185
+Z0 !s110 1727618121
 !i10b 1
 !s100 VhizJG_UoJ<b<SS=?:bCT2
 IeT:QZWh2WBX<?2Vzc=_UL3
@@ -23,7 +23,7 @@ Z6 OL;L;10.4;61
 r1
 !s85 0
 31
-Z7 !s108 1727290185.794000
+Z7 !s108 1727618121.611000
 Z8 !s107 c:/altera/quartus/eda/sim_lib/sgate.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|sgate_ver|c:/altera/quartus/eda/sim_lib/sgate.v|
 !i113 0

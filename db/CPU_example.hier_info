@@ -1,9 +1,9 @@
-|risc_cpu_with_prepherals
+|risc_cpu_with_peripherals
 clk => clk.IN2
 rst_n => rst_n.IN1
 
 
-|risc_cpu_with_prepherals|risc_cpu:cpu
+|risc_cpu_with_peripherals|risc_cpu:cpu
 clk => clk.IN4
 rst_n => rst_n.IN5
 rd <= state_machine:cpu_sm.rd
@@ -47,7 +47,7 @@ data[7] <> alu:cpu_alu.data
 data[7] <> data_controller:cpu_dc.data_out
 
 
-|risc_cpu_with_prepherals|risc_cpu:cpu|program_counter:cpu_pc
+|risc_cpu_with_peripherals|risc_cpu:cpu|program_counter:cpu_pc
 rst_n => pc_addr[0]~reg0.ACLR
 rst_n => pc_addr[1]~reg0.ACLR
 rst_n => pc_addr[2]~reg0.ACLR
@@ -115,7 +115,7 @@ pc_addr[11] <= pc_addr[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pc_addr[12] <= pc_addr[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_cpu_with_prepherals|risc_cpu:cpu|instruction_register:cpu_ir
+|risc_cpu_with_peripherals|risc_cpu:cpu|instruction_register:cpu_ir
 clk => inst_reg[0].CLK
 clk => inst_reg[1].CLK
 clk => inst_reg[2].CLK
@@ -201,7 +201,7 @@ ir_addr[11] <= inst_reg[11].DB_MAX_OUTPUT_PORT_TYPE
 ir_addr[12] <= inst_reg[12].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_cpu_with_prepherals|risc_cpu:cpu|accumulator:cpu_accu
+|risc_cpu_with_peripherals|risc_cpu:cpu|accumulator:cpu_accu
 clk => accu[0]~reg0.CLK
 clk => accu[1]~reg0.CLK
 clk => accu[2]~reg0.CLK
@@ -244,7 +244,7 @@ accu[6] <= accu[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 accu[7] <= accu[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_cpu_with_prepherals|risc_cpu:cpu|alu:cpu_alu
+|risc_cpu_with_peripherals|risc_cpu:cpu|alu:cpu_alu
 clk => alu_out[0]~reg0.CLK
 clk => alu_out[1]~reg0.CLK
 clk => alu_out[2]~reg0.CLK
@@ -393,7 +393,7 @@ alu_out[6] <= alu_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 alu_out[7] <= alu_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_cpu_with_prepherals|risc_cpu:cpu|state_machine:cpu_sm
+|risc_cpu_with_peripherals|risc_cpu:cpu|state_machine:cpu_sm
 clk => datacontrol_en~reg0.CLK
 clk => load_pc~reg0.CLK
 clk => load_ir~reg0.CLK
@@ -436,7 +436,6 @@ operation[2] => Equal3.IN0
 operation[2] => Equal4.IN1
 operation[2] => Equal5.IN0
 operation[2] => Equal6.IN0
-en => ~NO_FANOUT~
 fetch <= fetch~reg0.DB_MAX_OUTPUT_PORT_TYPE
 alu_en <= alu_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pc_inc <= pc_inc~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -448,7 +447,7 @@ load_pc <= load_pc~reg0.DB_MAX_OUTPUT_PORT_TYPE
 datacontrol_en <= datacontrol_en~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_cpu_with_prepherals|risc_cpu:cpu|data_controller:cpu_dc
+|risc_cpu_with_peripherals|risc_cpu:cpu|data_controller:cpu_dc
 en => data_out[0].OE
 en => data_out[1].OE
 en => data_out[2].OE
@@ -475,7 +474,7 @@ data_out[6] <= data_out[6].DB_MAX_OUTPUT_PORT_TYPE
 data_out[7] <= data_out[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_cpu_with_prepherals|risc_cpu:cpu|address_multiplexer:cpu_am
+|risc_cpu_with_peripherals|risc_cpu:cpu|address_multiplexer:cpu_am
 fetch => addr.OUTPUTSELECT
 fetch => addr.OUTPUTSELECT
 fetch => addr.OUTPUTSELECT
@@ -530,7 +529,7 @@ addr[11] <= addr.DB_MAX_OUTPUT_PORT_TYPE
 addr[12] <= addr.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_cpu_with_prepherals|ram:ram
+|risc_cpu_with_peripherals|ram:ram
 clk => ~NO_FANOUT~
 en => data.IN0
 rd => data.IN1
@@ -591,7 +590,7 @@ data[6] <> data[6]
 data[7] <> data[7]
 
 
-|risc_cpu_with_prepherals|rom:rom
+|risc_cpu_with_peripherals|rom:rom
 rd => data.IN0
 en => data.IN1
 addr[0] => ~NO_FANOUT~
@@ -617,7 +616,7 @@ data[6] <= data[6].DB_MAX_OUTPUT_PORT_TYPE
 data[7] <= data[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_cpu_with_prepherals|address_decoder:address_decoder
+|risc_cpu_with_peripherals|address_decoder:address_decoder
 addr[0] => ~NO_FANOUT~
 addr[1] => ~NO_FANOUT~
 addr[2] => ~NO_FANOUT~

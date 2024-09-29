@@ -1,7 +1,7 @@
-Fitter Status : Successful - Thu Sep 26 02:49:32 2024
+Fitter Status : Successful - Sun Sep 29 21:54:33 2024
 Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Full Version
 Revision Name : CPU_example
-Top-level Entity Name : risc_cpu_with_prepherals
+Top-level Entity Name : risc_cpu_with_peripherals
 Family : MAX 10
 Device : 10M08DAF484C8G
 Timing Models : Preliminary

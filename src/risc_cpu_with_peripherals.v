@@ -1,5 +1,5 @@
 // 带有外设（ROM、RAM、地址译码器）的CPU模块
-module risc_cpu_with_prepherals(
+module risc_cpu_with_peripherals(
     // 最简化，对外只暴露两个必要的接口（时钟输入、复位）
     input clk,
     input rst_n

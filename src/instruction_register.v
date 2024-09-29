@@ -31,6 +31,7 @@ module instruction_register(
 			inst_reg <= 16'd0;
 		end
 		else begin
+            // 在数据总线传输指令时使能
 			if(en)
 				casex(state)
 					1'b0: begin

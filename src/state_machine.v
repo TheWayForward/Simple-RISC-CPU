@@ -8,8 +8,6 @@ module state_machine(
 	input zero,
     // 操作数
 	input [2:0] operation,
-    // 使能
-	input en,
     // 取指令信号
     output reg fetch,
     // 算数逻辑运算单元使能信号
@@ -59,6 +57,7 @@ module state_machine(
     // 次态
 	reg [7:0] next_state;
 	
+    // 三段式状态机-次态逻辑
 	always @(*) begin
 		case(state)
 			IDLE: next_state <= S1;
@@ -74,13 +73,14 @@ module state_machine(
 		endcase
 	end
 	
+    // 三段式状态机-状态寄存器
 	always@(posedge clk or negedge rst_n) begin
 		if(!rst_n) state <= IDLE;
 		else
 			state <= next_state;
 	end
 	
-	
+	// 输出逻辑
 	always@(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
             {pc_inc, rd, wr, load_acc} <= 4'b0000;
@@ -89,6 +89,7 @@ module state_machine(
 		else control_cycle;
 	end
 	
+    // 规定每个状态输出的信号
 	task control_cycle;
 		begin
 			case(state)
@@ -126,7 +127,7 @@ module state_machine(
 						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b01001;
 					end
 					else begin
-                        // MOV
+                        // MOV or SKZ
 						{pc_inc, rd, wr, load_acc} <= 4'b0001;
 						{fetch, alu_en, load_ir, load_pc, datacontrol_en} <= 5'b01000;
 					end

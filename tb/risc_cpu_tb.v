@@ -13,7 +13,7 @@ module risc_cpu_tb;
     always #(`CLK_PERIOD / 2) clk = ~clk;
 
     // 实例化CPU及其外设模块
-    risc_cpu_with_prepherals rcwp(
+    risc_cpu_with_peripherals rcwp(
         .clk(clk),
         .rst_n(rst_n)
     );
@@ -51,13 +51,14 @@ module risc_cpu_tb;
         load_rom;
         // 系统复位
         reset;
+        // 监听并输出计算结果的变化
+        $monitor("%t %d", $time, rcwp.ram.mem[10'h2]);
         // 运行90000时间单位后，暂停仿真
         #90000 $stop;
     end
 
     // 将operation显示为ASCII指令助记符
     always @(operation) begin
-        $display("Operation Changed");
         show_operation_mnemoic(operation);
     end
 
